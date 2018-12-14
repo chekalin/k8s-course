@@ -9,6 +9,6 @@ docker push chekalin/multi-client:${SHA}
 docker push chekalin/multi-server:${SHA}
 docker push chekalin/multi-worker:${SHA}
 kubectl apply -f k8s
-kubectl set image deployemnts/client-deployment client=chekalin/multi-client:${SHA}
-kubectl set image deployemnts/server-deployment server=chekalin/multi-server:${SHA}
-kubectl set image deployemnts/worker-deployment worker=chekalin/multi-worker:${SHA}
+kubectl set image deployments/client-deployment client=chekalin/multi-client:${SHA}
+kubectl set image deployments/server-deployment server=chekalin/multi-server:${SHA}
+kubectl set image deployments/worker-deployment worker=chekalin/multi-worker:${SHA}
